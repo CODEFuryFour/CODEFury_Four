@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fertilizer Information - AgroConnect</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #6db8b5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #403d3d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  main {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    color: #4CAF50;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section h3 {
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  .section p {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  
+  ul li strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .fertilizer-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0d0d30;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn a {
+    display: inline-block;
+    background-color: #0d0d30;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .btn a:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+        </style>
+  </head>
+  <body>
+    <header>
+      <h1>AgroConnect</h1>
+    </header>
+    <main>
+      <section class="section">
+        <h2>Types of Fertilizers</h2>
+        <p>
+          Fertilizers play a crucial role in modern agriculture by providing
+          essential nutrients to crops. Here, we will explore various types of
+          fertilizers, their uses, benefits, images, and prices.
+        </p>
+
+        <section class="organic-fertilizers">
+          <h3>Organic Fertilizers</h3>
+          <p>
+            Organic fertilizers are derived from natural sources such as
+            compost, manure, and bone meal. They improve soil structure,
+            increase microbial activity, and provide a slow release of
+            nutrients.
+          </p>
+          <ul>
+            <li>
+              <strong>Compost:</strong> A mixture of decomposed organic matter
+              used to enrich soil.
+              <br />
+              <img
+                src="./2nd.jpg"
+                height="10%"
+                width="10%"
+                alt="Compost"
+                class="fertilizer-image"
+              />
+              <br />
+              <strong>Price:</strong> ₹500 per bag
+            </li>
+            <li>
+              <strong>Manure:</strong> Animal waste used to fertilize land.
+              <br />
+              <img
+                src="./1.jpg"
+                height="10%"
+                width="10%"
+                alt="Manure"
+                class="fertilizer-image"
+              />
+              <br />
+              <strong>Price:</strong> ₹300 per bag
+            </li>
+            <li>
+              <strong>Bone Meal:</strong> A mixture of finely and coarsely
+              ground animal bones used as an organic fertilizer.
+              <br />
+              <img
+                src="./3.jpg"
+                height="10%"
+                width="10%"
+                alt="Bone Meal"
+                class="fertilizer-image"
+              />
+              <br />
+              <strong>Price:</strong> ₹450 per bag
+            </li>
+          </ul>
+        </section>
+
+        <section class="chemical-fertilizers">
+          <h3>Chemical Fertilizers</h3>
+          <p>
+            Chemical fertilizers are synthetically produced and contain specific
+            ratios of nutrients. They offer precise nutrient control and quick
+            availability to plants. Common types include nitrogen, phosphorus,
+            and potassium fertilizers.
+          </p>
+          <ul>
+            <li>
+              <strong>Nitrogen Fertilizers:</strong> Promote leafy growth and
+              overall plant development.
+              <br />
+              <img
+                src="./4.jpg"
+                height="10%"
+                width="10%"
+                alt="Nitrogen Fertilizer"
+                class="fertilizer-image"
+              />
+              <br />
+              <strong>Price:</strong> ₹600 per bag
+            </li>
+            <li>
+              <strong>Phosphorus Fertilizers:</strong> Aid in root development
+              and flowering.
+              <br />
+              <img
+                src="./5.jpg"
+                height="10%"
+                width="10%"
+                alt="Phosphorus Fertilizer"
+                class="fertilizer-image"
+              />
+              <br />
+              <strong>Price:</strong> ₹700 per bag
+            </li>
+            <li>
+              <strong>Potassium Fertilizers:</strong> Enhance the plant’s
+              ability to resist disease and improve fruit quality.
+              <br />
+              <img
+                src="./6.jpg"
+                height="10%"
+                width="10%"
+                alt="Potassium Fertilizer"
+                class="fertilizer-image"
+              />
+              <br />
+              <strong>Price:</strong> ₹650 per bag
+            </li>
+          </ul>
+        </section>
+
+        <section class="biofertilizers">
+          <h3>Biofertilizers</h3>
+          <p>
+            Biofertilizers contain beneficial microorganisms that enhance
+            nutrient availability and promote healthy plant growth. They help in
+            nitrogen fixation, phosphorus solubilization, and organic matter
+            decomposition.
+          </p>
+          <ul>
+            <li>
+              <strong>Rhizobium:</strong> Bacteria that fix nitrogen in
+              leguminous plants.
+              <br />
+              <img
+                src="./7.jpg"
+                height="10%"
+                width="10%"
+                class="fertilizer-image"
+              />
+              <br />
+              <strong>Price:</strong> ₹400 per bag
+            </li>
+            <li>
+              <strong>Azospirillum:</strong> A group of nitrogen-fixing bacteria
+              that benefit a variety of crops.
+              <br />
+              <img
+                src="./8.jpg"
+                height="10%"
+                width="10%"
+                alt="Azospirillum"
+                class="fertilizer-image"
+              />
+              <br />
+              <strong>Price:</strong> ₹350 per bag
+            </li>
+            <li>
+              <strong>Mycorrhiza:</strong> Fungi that form a symbiotic
+              association with plant roots to enhance nutrient and water
+              absorption.
+              <br />
+              <img
+                src="./9.jpg"
+                height="10%"
+                width="10%"
+                alt="Mycorrhiza"
+                class="fertilizer-image"
+              />
+              <br />
+              <strong>Price:</strong> ₹500 per bag
+            </li>
+          </ul>
+        </section>
+
+        <p>
+          For personalized fertilization recommendations and expert advice,
+          please contact our support team at
+          <a href="mailto:support@agroconnect.com">support@agroconnect.com</a>.
+          <button type="buy now" class="btn">
+            <a href="payment.html">Buy now</a>
+          </button>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

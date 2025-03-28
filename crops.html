@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Suitability</title>
+<style>
+    body {
+  font-family: 'Arial', sans-serif;
+  background: color #b6b1b6;;
+  margin: 0;
+  padding: 0;
+  color: #1c3a3e;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #b6b1b6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #2b2d42;
+}
+
+h2 {
+  color: #2b2d42;
+  margin-bottom: 10px;
+}
+
+p, ul {
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color:#1c3a3e;
+        }
+        .container {
+            max-width: 500px;
+            background:#b6b1b6;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        select, button {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Crop Suitability Information</h1>
+    </header>
+    <main>
+      <section>
+        <center><h2>What is Crop Suitability?</h2>
+        <p>
+          Crop suitability refers to the assessment of specific crops' ability to grow optimally in a particular
+          environment. Factors such as soil type, temperature, rainfall, and sunlight play a key role in determining
+          crop compatibility.
+        </p>
+      </section>
+      <section>
+        <h2>Key Factors for Suitability:</h2>
+        <ul>
+          <li><b>Soil Type:</b> Determines nutrient availability and drainage.</li>
+          <li><b>Climate:</b> Includes temperature, rainfall, and humidity.</li>
+          <li><b>Sunlight:</b> Impacts photosynthesis and growth.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 AgroConnect - Empowering Agriculture with Technology</p>
+    </footer>
+  </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Suitability</title>
+   
+</head>
+<body>
+
+<div class="container">
+    <h2>Crop Suitability Information</h2>
+    <p>Select a soil type to see suitable crops.</p>
+
+    <select id="soilType">
+        <option value="clay">Clay Soil</option>
+        <option value="sandy">Sandy Soil</option>
+        <option value="loamy">Loamy Soil</option>
+        <option value="silty">Silty Soil</option>
+    </select>
+    <button onclick="showCrops()">Check Suitable Crops</button>
+
+    <p class="result" id="cropResult"></p>
+</div>
+
+<script>
+    function showCrops() {
+        const soilType = document.getElementById("soilType").value;
+        let crops = "";
+
+        switch(soilType) {
+            case "clay":
+                crops = "Wheat, Rice, Sugarcane";
+                break;
+            case "sandy":
+                crops = "Peanuts, Carrots, Watermelon";
+                break;
+            case "loamy":
+                crops = "Tomatoes, Potatoes, Corn";
+                break;
+            case "silty":
+                crops = "Paddy, Sugarcane, Lettuce";
+                break;
+            default:
+                crops = "Select a soil type";
+        }
+
+        document.getElementById("cropResult").innerText = "Suitable Crops: " + crops;
+    }
+</script>
+
+</body>
+</html>
+</body>
+</html>
